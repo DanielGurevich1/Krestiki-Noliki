@@ -1,0 +1,29 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="number_picker_width">50dp</dimen>
+    <dimen name="number_picker_height">70dp</dimen>
+    <dimen name="zoom_text">40dp</dimen>
+    <item name="player1_margin" format="float" type="dimen">0.5</item>
+    <item name="players2_margin" format="float" type="dimen">0.634</item>
+    <item name="player_button_width" format="float" type="dimen">0.333</item>
+    <item name="player_button_height" format="float" type="dimen">0.067</item>
+    <item name="settings_x_size" format="float" type="dimen">0.04</item>
+    <item name="settings_x_width" format="float" type="dimen">0.007</item>
+    <item name="text_size" format="float" type="dimen">0.033</item>
+    <item name="game_field_margin" format="float" type="dimen">0.05</item>
+    <item name="game_field_line_width" format="float" type="dimen">0.07</item>
+    <item name="inside_cell_margin" format="float" type="dimen">0.1</item>
+    <item name="inside_cell_symbol_margin" format="float" type="dimen">0.2</item>
+    <item name="inside_cell_symbol_width" format="float" type="dimen">0.15</item>
+    <item name="win_line_width" format="float" type="dimen">0.1</item>
+    <item name="zoom_scale" format="float" type="dimen">1.1</item>
+    <item name="zoom_max_scale" format="float" type="dimen">10.0</item>
+    <integer name="choose_symbol_weight">4</integer>
+    <integer name="settings_button_weight">4</integer>
+    <integer name="settings_button_zoom_weight">2</integer>
+    <integer name="settings_max_size">50</integer>
+    <integer name="settings_min_size">3</integer>
+    <integer name="settings_default_size">15</integer>
+</resources>

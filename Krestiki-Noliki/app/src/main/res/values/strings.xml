@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Крестики-Нолики</string>
+    <string name="action_settings">Настройки</string>
+    <string name="Player1">1 Игрок</string>
+    <string name="Players2">2 Игрока</string>
+    <string name="title_activity_settings">Настройки</string>
+
+    <string name="settings_choose_symbol">Выберите символ</string>
+    <string name="settings_line_length">Длина линии</string>
+    <string name="settings_field_size">Размер поля NxN</string>
+    <string name="settings_ready">Готово</string>
+    <string name="settings_cancel">Отмена</string>
+    <string name="title_activity_game_field">Крестики-Нолики</string>
+
+    <string name="gamefield_new_game">Новая игра</string>
+    <string name="gamefield_move_cancel">Отменить ход</string>
+    <string name="settings_toast">Размер поля от 3 до 50!</string>
+
+
+</resources>

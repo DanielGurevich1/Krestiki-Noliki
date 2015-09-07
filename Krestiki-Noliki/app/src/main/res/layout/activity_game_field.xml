@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.learn.demin.krestiki_noliki.GameField">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_menu" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4">
+
+            <view
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                class="com.learn.demin.krestiki_noliki.GameFieldView"
+                android:id="@+id/view"
+                android:layout_weight="10" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView3"
+                android:visibility="invisible"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/gamefield_new_game"
+                android:id="@+id/gamefield_new_game"
+                style="@style/ButtonTheme"
+                android:layout_weight="@integer/settings_button_weight" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView"
+                android:visibility="invisible"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/gamefield_move_cancel"
+                android:id="@+id/gamefield_move_cancel"
+                style="@style/ButtonTheme"
+                android:layout_weight="@integer/settings_button_weight" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView2"
+                android:visibility="invisible"
+                android:layout_weight="1" />
+
+            <Button
+                style="@style/ButtonSettingsCancelTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:id="@+id/plus"
+                android:layout_weight="@integer/settings_button_zoom_weight"
+                android:textSize="@dimen/zoom_text" />
+
+            <Button
+                style="@style/ButtonSettingsCancelTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:id="@+id/minus"
+                android:layout_weight="@integer/settings_button_zoom_weight"
+                android:textSize="@dimen/zoom_text"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView4"
+                android:visibility="invisible"
+                android:layout_weight="1" />
+
+        </TableRow>
+    </LinearLayout>
+</RelativeLayout>

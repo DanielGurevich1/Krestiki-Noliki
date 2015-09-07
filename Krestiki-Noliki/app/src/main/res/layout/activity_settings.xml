@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.learn.demin.krestiki_noliki.Settings">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_menu" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="@string/settings_choose_symbol"
+                android:id="@+id/text_choose_symbol"
+                android:gravity="center"
+                android:layout_weight="@integer/choose_symbol_weight"
+                style="@style/TextTheme"/>
+
+            <view
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                class="com.learn.demin.krestiki_noliki.XView"
+                android:id="@+id/viewX"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:id="@+id/radioButtonX"
+                android:layout_weight="1"
+                android:checked="false" />
+
+            <view
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                class="com.learn.demin.krestiki_noliki.OView"
+                android:id="@+id/viewY"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:id="@+id/radioButtonO"
+                android:layout_weight="1"/>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:weightSum="1">
+
+            <TextView
+                android:text="@string/settings_line_length"
+                android:id="@+id/text_line_length"
+                android:layout_weight="1"
+                android:gravity="center"
+                style="@style/TextTheme"/>
+
+            <NumberPicker
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/win_size"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:solidColor="@color/button_color_start"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="@string/settings_field_size"
+                android:id="@+id/text_field_size"
+                android:layout_weight="2"
+                style="@style/TextTheme"
+                android:gravity="center" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/field_size"
+                android:layout_weight="1"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView3"
+                android:visibility="invisible"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_ready"
+                android:id="@+id/settings_ready"
+                style="@style/ButtonTheme"
+                android:layout_weight="@integer/settings_button_weight" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView"
+                android:visibility="invisible"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_cancel"
+                android:id="@+id/settings_cancel"
+                style="@style/ButtonSettingsCancelTheme"
+                android:layout_weight="@integer/settings_button_weight" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView2"
+                android:visibility="invisible"
+                android:layout_weight="1" />
+
+        </TableRow>
+    </LinearLayout>
+
+</RelativeLayout>
